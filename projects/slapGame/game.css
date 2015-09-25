@@ -1,0 +1,36 @@
+.stickimg {
+	height:200px;
+}
+
+.slapimg {
+	height:15em;
+}
+
+.punchimg {
+	height:15em;
+}
+
+.humbleimg {
+	height:15em;
+}
+
+span {
+	font:3em;
+}
+
+h1 {
+	font: center;
+}
+
+.hide {
+	display: none;
+}
+
+.action {
+	left: 0;
+	position: absolute;
+}
+
+.panel-body {
+	position: relative;
+}

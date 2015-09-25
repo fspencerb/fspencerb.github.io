@@ -1,0 +1,46 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Slap Game</title>
+  <!--Begin StyleSheets-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="game.css ">
+  <!--End StyleSheets-->
+  </head>
+  <body>
+    <h1>The Stress Reliever Game</h1>
+    <div class="panel panel-default ">
+      <div class="panel-heading ">
+<!--*We're beating the Douchebaggery out of our Ninja so he can be a contributing member of society-->
+        <span>Name: </span><span id="name">John Doe</span>
+        <br/>
+        <span>Hits: </span><span id="hitshow">-</span>
+        <br/>
+        <span>Health: </span><span id="hp">--</span>
+        <div class="progress">
+          <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+           <span class="sr-only">40% Complete (success)</span>
+          </div>
+        </div>
+        <h3 class="panel-title "></h3>
+      </div>
+      <div class="panel-body ">
+        <img class="stickimg" src="image/stickfigure.png">
+        <img id="slapshow" class="slapimg hide action" src="image/realityslap.jpg">
+        <img id="punchshow" class="punchimg hide action" src="image/powpunch.png">
+        <img id="kickshow" class="kickimg hide action" src="image/crunch.jpg">
+        <img id="humbleshow" class="humbleimg hide action" src="image/humbledstickman.jpg">
+      </div>
+      <div class="panel-footer ">
+        <button class="btn btn-primary" onClick="player.slap()">Slap</button>
+        <button class="btn btn-primary" onClick="player.punch()">Punch</button>
+        <button class="btn btn-primary" onClick="player.kick()">Kick</button>
+        <button class="btn btn-primary" onClick="player.reset()">100% Heal</button>
+      </div>
+    </div>
+    <!--Begin JavaScript link-->
+    <script src="game.js "></script>
+    <!--End JavaScript link-->
+  </body>
+</html>
