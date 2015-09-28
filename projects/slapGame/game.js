@@ -7,6 +7,8 @@ function update() {
 	document.getElementById("hp").innerText = player.health;
 	document.getElementById("hitshow").innerText = player.hits;
 	document.getElementById("name").innerText = player.name;
+	document.getElementById("prog").innerText = player.health;
+	document.getElementById("prog").style.width = player.health;
 }	
 
 function showHumbled(id) {
