@@ -1,0 +1,150 @@
+<html>
+<head>
+<title>Spencer's NFL Roster</title>
+<link rel="stylesheet" href="https://rawgithub.com/yesmeck/jquery-jsonview/master/dist/jquery.jsonview.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <div class="container">
+	<div class="panel panel-default">
+  		<div class="panel-heading">Spencer's NFL Roster</div>
+          <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Choose Favorite Team
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a href="#">Arizona Cardinals</a></li>
+                    <li><a href="#">Atlanta Falcons</a></li>
+                    <li><a href="#">Baltimore Ravens</a></li>
+                    <li><a href="#">Buffalo Bills</a></li>
+                </ul>
+              </div>
+  	     <div class="panel-body">
+               <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+                <h3><a href="http://www.jqueryscript.net/menu/">Menu</a></h3>
+                    <a href="#">Arizona Cardinals</a>
+                    <a href="#">Atlanta Falcons</a>
+                    <a href="#">Baltimore Ravens</a>
+                    <a href="#">Buffalo Bills</a>
+                </nav>
+           <aside role="complementary" class="col span_4 clr">
+               <div class="api-list-title">You can choose players from the league to add to your team.</div>
+               <table class="table table-bordered">
+                   <tr class="playerlistTitles">
+                       <td>Player Action</td>
+                       <td>Player Name</td>
+                       <td>Player Position</td> 
+                       <td>Player Number</td>
+                   </tr>
+                   <tbody id="APIlist">
+                       
+                   </tbody>
+               </table>
+           </aside>
+           <div class="my-team-player-list">
+               <table class="table table-bordered">
+                   <tr class="playerlistTitles">
+                       <td>Player Name</td>
+                       <td>Player Position</td> 
+                       <td>Player Number</td>
+                   </tr>
+                   <tr>
+                       <td id="playerlistName">Reggie Bush</td>
+                       <td id="playerlistPosition">WR</td> 
+                       <td id="playerlistNum">94</td>
+                   </tr>
+               </table>
+           <div class="player-roster">
+                <div id="results" class="player-card">
+                   <div>
+                       <div style="text-align:center"><span type="button" class="btn btn-danger btn-xs" id="removePlayer">Remove</span></div>
+                       <image src="http://s.nflcdn.com/static/content/public/image/fantasy/transparent/200x200/"></image>
+                   </div>
+                   <div>
+                       <span style="text-align:center">Name:</span>
+                   </div>
+                   <div>
+                       <span style="text-align:center">Position:</span>
+                   </div>
+                   <div>
+                       <span style="text-align:center">Number:</span>
+                   </div>
+                </div>
+           </div>
+               <hr/>
+           <div class="player-form">
+             <form>
+                <div><span class="AddPlayer-title">Add Custom Player</span>
+                  <div>
+                     <span>Player Name:</span>
+                  </div>
+                  <div>
+                     <span><input id="playerName"/></span>
+                  </div>
+                  <div>
+                      <span>Player Position:</span>
+                  </div>
+                  <div>
+                      <span><input id="playerPosition"/></span>
+                  </div>
+                  <div>
+                      <span>Player Number:</span>
+                  </div>
+                  <div>
+                      <span><input id="playerNumber" /></span>
+                  </div>
+                  <div>
+                      <button class="btn btn-primary" id="addPlayer">Add Player</button>
+                  </div>  
+              </div> 
+             </form>
+              <form>
+                <div><span class="AddPlayer-title">Add Current NFL Player</span>
+                  <div>
+                     <span>Player Name:</span>
+                  </div>
+                  <div>
+                     <span><input id="playerName"/></span>
+                  </div>
+                  <div>
+                      <span>Player Position</span>
+                  </div>
+                  <div>
+                      <span><input id="playerPosition"/></span>
+                  </div>
+                  <div>
+                      <span>Player Number</span>
+                  </div>
+                  <div>
+                      <span><input id="playerNumber" /></span>
+                  </div>
+                  <div>
+                      <span class="btn btn-primary" id="addNFLPlayer">Add Player</span>
+                  </div>  
+              </div> 
+             </form>
+             <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Choose Team To Add Player From
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+           </div>
+         </div>
+    </div>
+  </div>
+    <script src="js/classie.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="https://rawgithub.com/yesmeck/jquery-jsonview/master/dist/jquery.jsonview.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
