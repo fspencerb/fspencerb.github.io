@@ -1,0 +1,7 @@
+diff --git a/projects/nfl-roster b/projects/nfl-roster
+new file mode 160000
+index 0000000..c4d7446
+--- /dev/null
++++ b/projects/nfl-roster
+@@ -0,0 +1 @@
++Subproject commit c4d7446f3236732d31d5c84bd3401be4050a6a9e
