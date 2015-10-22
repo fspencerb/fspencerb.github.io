@@ -1,0 +1,79 @@
+<html ng-app="racingFrogs">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Racing Frogs</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="app.css">
+
+</head>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panelTitle panel-title">Racing Frogs</h3>
+    </div>
+    <div class="panel-body">
+        <table class="racingTable">
+            <tr ng-repeat="frog in vm.froglist track by $index">
+                <td class="raceLaneNum">{{frog.LaneNum}}</td>
+                <td class="frogName">{{frog.name}}</td>
+                <td class="racingLane">
+                    <div class="imgcontainer">
+                        <img class="frogimg" style="left: {{frog.posX}}%" src="img/frogblue.png" />
+                        <div>Start      ||</div>
+                    </div>
+                </td>
+                <td class="finishLine">|| Finish</td>
+            </tr>
+        </table>
+    </div>
+    <div class="panel-footer">
+        <span class="btn btn-success" ng-click="vm.startRace()">Start Race</span>
+        <form ng-submit="vm.addFrogToList(vm.frogName)">
+            <button type="submit" class="btn btn-warning">Add Frog
+                <p>(no more than 9)</p>
+            </button>
+            <label for="frogname">Frog Name: </label>
+            <input type="text" placeholder="(i.e. Bill, Sam, George)" name="frogname" title="Frog Name" ng-model="vm.frogName">
+        </form>
+        <span class="btn btn-danger" ng-click="vm.reset()">Racers Back to<p>their starting lines</p></span>
+        <div class="alert alert-success" ng-repeat="winner in vm.winners" ng-if="vm.winners.length < 2">
+            WOOT! {{vm.winners[0].name}} won the race!
+        </div>
+        <div class="alert alert-warning" ng-repeat="winner in vm.winners" ng-if="vm.winners.length > 1">
+            Bummer! {{winner.name}} tied the race!
+        </div>
+    </div>
+</div>
+
+<!-- Betting Guys-->
+
+<body ng-controller="MainController as vm">
+    <div class="container">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                Fun with Joe and Bob
+            </div>
+            <div class="panel-body">
+                <p>
+                    Joe has {{ vm.joe.cash }}
+                </p>
+                <p>
+                    Bob has {{ vm.bob.cash }}
+                </p>
+                <p>
+                    The bank has {{ vm.bank }}
+                </p>
+            </div>
+            <div class="panel-footer">
+                <span class="btn btn-default" ng-click="vm.giveMoneyToJoe()">Give $10 to Joe</span>
+                <span class="btn btn-default" ng-click="vm.receiveMoneyFromBob()">Receive $5 from Bob</span>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.6/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
