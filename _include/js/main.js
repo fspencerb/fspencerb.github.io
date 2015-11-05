@@ -77,10 +77,10 @@ BRUSHED.slider = function(){
 		thumb_links				:	0,			// Individual thumb links for each slide
 		thumbnail_navigation    :   0,			// Thumbnail navigation
 		slides 					:  	[			// Slideshow Images
-											{image : '_include/img/slider-images/image01.jpg', title : '<div class="slide-content">F. Spencer Buster</div>', thumb : '', url : ''},
-											{image : '_include/img/slider-images/image02.jpg', title : '<div class="slide-content">Brushed</div>', thumb : '', url : ''},
-											{image : '_include/img/slider-images/image03.jpg', title : '<div class="slide-content">Brushed</div>', thumb : '', url : ''},
-											{image : '_include/img/slider-images/image04.jpg', title : '<div class="slide-content">Brushed</div>', thumb : '', url : ''}  
+											{image : '_include/img/slider-images/IMG_0007.JPG', title : '<div class="slide-content">Near McCall, ID</div>', thumb : '', url : ''},
+											{image : '_include/img/slider-images/IMG_0026.JPG', title : '<div class="slide-content">Payette Lake</div>', thumb : '', url : ''},
+											{image : '_include/img/slider-images/img_1470 bw.jpg', title : '<div class="slide-content">Oregon Coast</div>', thumb : '', url : ''},
+											{image : '_include/img/slider-images/IMG_2075.JPG', title : '<div class="slide-content">From atop Mount Borah</div>', thumb : '', url : ''}  
 									],
 									
 		// Theme Options			   
