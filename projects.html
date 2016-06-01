@@ -1,650 +1,518 @@
-﻿<html lang="en-US" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths js_active  vc_desktop  vc_transform  vc_transform ">
-    
-    <head>
-        <meta charset="UTF-8">
-        <title>My Projects | Portfolio</title>
-        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
-        <link rel="profile" href="/favicon.ico">
-        <link rel="pingback" href="/favicon.ico">
-        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-        <link rel="apple-touch-icon" href="/favicon.ico">
-        <link rel="icon" type="image/x-icon" href="/favicon.ico">
-        <!--[if gte IE 9]>
-            <style type="text/css">
-                .gradient {
-                    filter: none;
-                }
-            </style>
-        <![endif]-->
-        <script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
-        <script type="text/javascript" src="http://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/alphabet.js"></script>
-        <link href="//fonts.googleapis.com/css?family=Raleway:100,200,300,400,600,700,800,400italic|Open+Sans:100,200,300,400,600,700,800,400italic|Raleway:100,200,300,400,600,700,800,400italic&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-        <link rel="alternate" type="application/rss+xml" title="My Blog » Feed" href="http://maisieeverett.com/feed">
-        <link rel="alternate" type="application/rss+xml" title="My Blog » Comments Feed" href="http://maisieeverett.com/comments/feed">
-        <link rel="alternate" type="application/rss+xml" title="My Blog » Portfolio Comments Feed" href="http://maisieeverett.com/portfolio/feed">
-        <link rel="stylesheet" id="dashicons-css" href="http://maisieeverett.com/wp-includes/css/dashicons.min.css?ver=4.1.7" type="text/css" media="all">
-        <link rel="stylesheet" id="elusive-css" href="http://maisieeverett.com/wp-content/plugins/menu-icons/css/elusive.min.css?ver=2.0" type="text/css" media="all">
-        <link rel="stylesheet" id="fa-css" href="http://maisieeverett.com/wp-content/plugins/menu-icons/css/font-awesome.min.css?ver=4.2.0" type="text/css" media="all">
-        <link rel="stylesheet" id="foundation-icons-css" href="http://maisieeverett.com/wp-content/plugins/menu-icons/css/foundation-icons.min.css?ver=3.0" type="text/css" media="all">
-        <link rel="stylesheet" id="genericon-css" href="http://maisieeverett.com/wp-content/plugins/menu-icons/css/genericons.min.css?ver=3.2" type="text/css" media="all">
-        <link rel="stylesheet" id="menu-icons-extra-css" href="http://maisieeverett.com/wp-content/plugins/menu-icons/css/extra.min.css?ver=0.7.0" type="text/css" media="all">
-        <link rel="stylesheet" id="layerslider-css" href="http://maisieeverett.com/wp-content/plugins/LayerSlider/static/css/layerslider.css?ver=5.3.2" type="text/css" media="all">
-        <link rel="stylesheet" id="ls-google-fonts-css" href="http://fonts.googleapis.com/css?family=Lato:100,300,regular,700,900%7COpen+Sans:300%7CIndie+Flower:regular%7COswald:300,regular,700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
-        <link rel="stylesheet" id="showoff-css-fa-css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css?ver=4.1.7" type="text/css" media="all">
-        <link rel="stylesheet" id="showoff-style-css" href="http://maisieeverett.com/wp-content/plugins/showoff/site/css/style.css?ver=4.1.7" type="text/css" media="all">
-        <link rel="stylesheet" id="showoff-fonts-css" href="//fonts.googleapis.com/css?family=Roboto+Condensed%7CBattambang&amp;ver=4.1.7" type="text/css" media="all">
-        <link rel="stylesheet" id="svg-icon-set1-style-css" href="http://maisieeverett.com/wp-content/plugins/svg-vector-icon-plugin/includes/css/wordpress-svg-icon-plugin-style.css?ver=4.1.7" type="text/css" media="all">
-        <link rel="stylesheet" id="svg-icon-set1-expansion-style-css" href="http://maisieeverett.com/wp-content/plugins/svg-vector-icon-plugin/includes/css/wordpress-svg-icon-plugin-expansion-style.css?ver=4.1.7" type="text/css" media="all">
-        <link rel="stylesheet" id="default_style-css" href="http://maisieeverett.com/wp-content/themes/bridge/style.css?ver=4.1.7" type="text/css" media="all">
-        <link rel="stylesheet" id="font-awesome-css" href="http://maisieeverett.com/wp-content/themes/bridge/css/font-awesome/css/font-awesome.min.css?ver=4.1.7" type="text/css" media="all">
-        <link rel="stylesheet" id="stylesheet-css" href="http://maisieeverett.com/wp-content/themes/bridge/css/stylesheet.min.css?ver=4.1.7" type="text/css" media="all">
-        <link rel="stylesheet" id="webkit-css" href="http://maisieeverett.com/wp-content/themes/bridge/css/webkit_stylesheet.css?ver=4.1.7" type="text/css" media="all">
-        <link rel="stylesheet" id="style_dynamic-css" href="http://maisieeverett.com/wp-content/themes/bridge/css/style_dynamic.css?ver=1428405766" type="text/css" media="all">
-        <link rel="stylesheet" id="responsive-css" href="http://maisieeverett.com/wp-content/themes/bridge/css/responsive.min.css?ver=4.1.7" type="text/css" media="all">
-        <link rel="stylesheet" id="style_dynamic_responsive-css" href="http://maisieeverett.com/wp-content/themes/bridge/css/style_dynamic_responsive.css?ver=1428405766" type="text/css" media="all">
-        <link rel="stylesheet" id="vertical_responsive-css" href="http://maisieeverett.com/wp-content/themes/bridge/css/vertical_responsive.css?ver=4.1.7" type="text/css" media="all">
-        <link rel="stylesheet" id="js_composer_front-css" href="http://maisieeverett.com/wp-content/plugins/js_composer/assets/css/js_composer.css?ver=4.3.4" type="text/css" media="all">
-        <link rel="stylesheet" id="custom_css-css" href="http://maisieeverett.com/wp-content/themes/bridge/css/custom_css.css?ver=1428405766" type="text/css" media="all">
-        <link rel="stylesheet" id="social-icons-widget-widget-css" href="http://maisieeverett.com/wp-content/plugins/social-media-icons-widget/css/social_icons_widget.css?ver=4.1.7" type="text/css" media="all">
-        <link rel="stylesheet" id="fontawesome-css" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css?ver=1.3.9" type="text/css" media="all">
-        <!--[if IE 7]>
-            <link rel='stylesheet' id='fontawesome-ie-css' href='//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome-ie7.min.css?ver=1.3.9' type='text/css' media='all' />
-        <![endif]-->
-        <link rel="stylesheet" id="js_composer_custom_css-css" href="http://maisieeverett.com/wp-content/uploads/js_composer/custom.css?ver=4.3.4" type="text/css" media="screen">
-        <link rel="stylesheet" id="sccss_style-css" href="http://maisieeverett.com?sccss=1&amp;ver=4.1.7" type="text/css" media="all">
-        <style>
-            /* Accessible for screen readers but hidden from view */
-            .fa-hidden {
-                position:absolute;
-                left:-10000px;
-                top:auto;
-                width:1px;
-                height:1px;
-                overflow:hidden;
-            }
-            .rtl .fa-hidden {
-                left:10000px;
-            }
-            .fa-showtext {
-                margin-right: 5px;
-            }
-        </style>
-        <div class="fit-vids-style" id="fit-vids-style" style="display: none;">&shy;
-            <style>
-                .fluid-width-video-wrapper {
-                    width: 100%;
-                    position: relative;
-                    padding: 0;
-                    min-height: 1px;
-                }
-                .fluid-width-video-wrapper iframe, .fluid-width-video-wrapper object, .fluid-width-video-wrapper embed {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                }
-            </style>
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if (IE 9)]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-US"> <!--<![endif]-->
+<head>
+
+<!-- Meta Tags -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>F. Spencer Buster Projects | Portfolio</title>
+
+<meta name="description" content="Insert Your Site Description" /> 
+
+<!-- Mobile Specifics -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="HandheldFriendly" content="true"/>
+<meta name="MobileOptimized" content="320"/>   
+
+<!-- Mobile Internet Explorer ClearType Technology -->
+<!--[if IEMobile]>  <meta http-equiv="cleartype" content="on">  <![endif]-->
+
+<!-- Bootstrap -->
+<link href="_include/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Main Style -->
+<link href="_include/css/main.css" rel="stylesheet">
+
+<!-- Supersized -->
+<link href="_include/css/supersized.css" rel="stylesheet">
+<link href="_include/css/supersized.shutter.css" rel="stylesheet">
+
+<!-- FancyBox -->
+<link href="_include/css/fancybox/jquery.fancybox.css" rel="stylesheet">
+
+<!-- Font Icons -->
+<link href="_include/css/fonts.css" rel="stylesheet">
+
+<!-- Shortcodes -->
+<link href="_include/css/shortcodes.css" rel="stylesheet">
+
+<!-- Responsive -->
+<link href="_include/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="_include/css/responsive.css" rel="stylesheet">
+
+<!-- Supersized -->
+<link href="_include/css/supersized.css" rel="stylesheet">
+<link href="_include/css/supersized.shutter.css" rel="stylesheet">
+
+<!-- Google Font -->
+<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css'>
+
+<!-- Fav Icon -->
+<link rel="shortcut icon" href="#">
+
+<link rel="apple-touch-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="114x114" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="72x72" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="144x144" href="favicon.ico">
+
+<!-- Modernizr -->
+<script src="_include/js/modernizr.js"></script>
+<!--test-->
+<!-- Analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'Insert Your Code']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- End Analytics -->
+
+</head>
+
+
+<body>
+
+<!-- This section is for Splash Screen -->
+<div class="ole">
+<section id="jSplash">
+	<div id="circle"></div>
+</section>
+</div>
+<!-- End of Splash Screen -->
+
+<!-- Homepage Slider -->
+<div id="home-slider">	
+    <div class="overlay"></div>
+
+    <div class="slider-text">
+    	<div id="slidecaption"></div>
+    </div>   
+	
+	<div class="control-nav">
+        <a id="prevslide" class="load-item"><i class="font-icon-arrow-simple-left"></i></a>
+        <a id="nextslide" class="load-item"><i class="font-icon-arrow-simple-right"></i></a>
+        <ul id="slide-list"></ul>
+        
+        <a id="nextsection" href="#work"><i class="font-icon-arrow-simple-down"></i></a>
+    </div>
+</div>
+<!-- End Homepage Slider -->
+
+<!-- Header -->
+<header>
+    <div class="sticky-nav">
+    	<a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
+        
+        <div id="logo">
+        	<a id="goUp" href="#home-slider" title="Projects | Portfolio of Projects">F. Spencer Buster</a>
         </div>
-        <script type="text/javascript" src="http://maisieeverett.com/wp-content/plugins/LayerSlider/static/js/greensock.js?ver=1.11.8"></script>
-        <style type="text/css"></style>
-        <script type="text/javascript" src="http://maisieeverett.com/wp-includes/js/jquery/jquery.js?ver=1.11.1"></script>
-        <script type="text/javascript" src="http://maisieeverett.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1"></script>
-        <script type="text/javascript" src="http://maisieeverett.com/wp-content/plugins/LayerSlider/static/js/layerslider.kreaturamedia.jquery.js?ver=5.3.2"></script>
-        <script type="text/javascript" src="http://maisieeverett.com/wp-content/plugins/LayerSlider/static/js/layerslider.transitions.js?ver=5.3.2"></script>
-        <script type="text/javascript" src="http://maisieeverett.com/wp-content/plugins/showoff/site/js/modernizr.js?ver=4.1.7"></script>
-        <script type="text/javascript" src="http://maisieeverett.com/wp-content/plugins/showoff/site/js/imagesloaded.js?ver=4.1.7"></script>
-        <script type="text/javascript" src="http://maisieeverett.com/wp-content/plugins/showoff/site/js/jquery.easing.js?ver=4.1.7"></script>
-        <script type="text/javascript" src="http://maisieeverett.com/wp-content/plugins/showoff/site/js/showoff.js?ver=4.1.7"></script>
-        <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://maisieeverett.com/xmlrpc.php?rsd">
-        <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://maisieeverett.com/wp-includes/wlwmanifest.xml">
-        <meta name="generator" content="WordPress 4.1.7">
-        <link rel="canonical" href="http://maisieeverett.com/portfolio">
-        <link rel="shortlink" href="http://maisieeverett.com/?p=15538">
-        <script type="text/javascript">
-            if (typeof ajaxurl === "undefined") var ajaxurl = 'http://maisieeverett.com/wp-admin/admin-ajax.php';
-        </script>
-        <meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress.">
-        <!--[if IE 8]>
-            <link rel="stylesheet" type="text/css" href="http://maisieeverett.com/wp-content/plugins/js_composer/assets/css/vc-ie8.css" media="screen">
-        <![endif]-->
-        <style>
-            #showoff-IEJXWPXUSI .showoff-top-title {
-                font-family: Roboto Condensed
-            }
-            #showoff-IEJXWPXUSI .showoff-top-title {
-                font-size: 30px
-            }
-            #showoff-IEJXWPXUSI .showoff-pagination a {
-                font-family: Roboto Condensed
-            }
-            #showoff-IEJXWPXUSI .showoff-categories a {
-                font-family: Roboto Condensed
-            }
-            #showoff-IEJXWPXUSI .showoff-pagination a {
-                font-size: 12px
-            }
-            #showoff-IEJXWPXUSI .showoff-categories a {
-                font-size: 12px
-            }
-            #showoff-IEJXWPXUSI .showoff-project-inner-readmore {
-                font-family: Roboto Condensed
-            }
-            #showoff-IEJXWPXUSI .showoff-project-inner-readmore {
-                font-size: 12px
-            }
-            #showoff-IEJXWPXUSI .showoff-project-inner h4 {
-                font-family: Roboto Condensed
-            }
-            #showoff-IEJXWPXUSI .showoff-project-inner h4 {
-                font-size: 31px
-            }
-            #showoff-IEJXWPXUSI .showoff-project-inner .showoff-project-inner-content {
-                font-family: Battambang
-            }
-            #showoff-IEJXWPXUSI .showoff-project-inner .showoff-project-inner-content {
-                font-size: 14px
-            }
-            #showoff-IEJXWPXUSI .showoff-project-inner-readmore {
-                background: rgb(255, 85, 86)
-            }
-            #showoff-IEJXWPXUSI .showoff-project-inner-readmore {
-                color: rgb(255, 255, 255)
-            }
-            #showoff-IEJXWPXUSI .showoff-project-inner-readmore:hover {
-                background: rgb(255, 0, 94)
-            }
-            #showoff-IEJXWPXUSI .showoff-project-inner-readmore:hover {
-                color: rgb(255, 255, 255)
-            }
-            #showoff-IEJXWPXUSI .showoff-categories a {
-                background: rgb(255, 85, 86)
-            }
-            #showoff-IEJXWPXUSI .showoff-categories a {
-                color: rgb(255, 255, 255)
-            }
-            #showoff-IEJXWPXUSI .showoff-categories a:hover {
-                background: rgb(255, 0, 94)
-            }
-            #showoff-IEJXWPXUSI .showoff-categories a:hover {
-                color: rgb(255, 255, 255)
-            }
-            #showoff-IEJXWPXUSI .showoff-categories a.active {
-                background: rgb(188, 188, 188)
-            }
-            #showoff-IEJXWPXUSI .showoff-categories a.active {
-                color: rgb(255, 255, 255)
-            }
-            #showoff-IEJXWPXUSI .showoff-pagination a {
-                background: rgb(255, 85, 86)
-            }
-            #showoff-IEJXWPXUSI .showoff-pagination a {
-                color: rgb(255, 255, 255)
-            }
-            #showoff-IEJXWPXUSI .showoff-pagination a:hover {
-                background: rgb(255, 0, 94)
-            }
-            #showoff-IEJXWPXUSI .showoff-pagination a:hover {
-                color: rgb(255, 255, 255)
-            }
-            #showoff-IEJXWPXUSI .showoff-pagination a.active {
-                background: rgb(188, 188, 188)
-            }
-            #showoff-IEJXWPXUSI .showoff-pagination a.active {
-                color: rgb(255, 255, 255)
-            }
-            #showoff-IEJXWPXUSI .showoff-project-thumbnail-hover {
-                background: rgb(255, 41, 84)
-            }
-            #showoff-IEJXWPXUSI .showoff-project-thumbnail-hover i {
-                color: rgb(255, 255, 255)
-            }
-            #showoff-IEJXWPXUSI .showoff-project-thumbnail-hover p {
-                color: rgb(255, 255, 255)
-            }
-            #showoff-IEJXWPXUSI .showoff-project-thumbnail-hover p {
-                font-family: Roboto Condensed
-            }
-            #showoff-IEJXWPXUSI .showoff-project-thumbnail-hover p {
-                font-size: 18px
-            }
-            #showoff-IEJXWPXUSI .showoff-project-inner-wrapper {
-                background: rgb(255, 255, 255)
-            }
-            #showoff-IEJXWPXUSI .showoff-project-inner-pagination-page {
-                color: rgb(205, 205, 205)
-            }
-            #showoff-IEJXWPXUSI .showoff-project-inner-pagination-page:hover {
-                color: rgb(255, 85, 86)
-            }
-            #showoff-IEJXWPXUSI .showoff-project-inner-pagination-page.active {
-                color: rgb(255, 85, 86)
-            }
-            #showoff-IEJXWPXUSI .showoff-project-inner-close {
-                color: rgb(205, 205, 205)
-            }
-            #showoff-IEJXWPXUSI .showoff-project-inner-close:hover {
-                color: rgb(255, 85, 86)
-            }
-            #showoff-IEJXWPXUSI .showoff-lightbox-close {
-                color: rgb(205, 205, 205)
-            }
-            #showoff-IEJXWPXUSI .showoff-lightbox-close:hover {
-                color: rgb(255, 85, 86)
-            }
-            #showoff-IEJXWPXUSI .showoff-lightbox-navigation a i {
-                color: rgb(205, 205, 205)
-            }
-            #showoff-IEJXWPXUSI .showoff-lightbox-navigation a i:hover {
-                color: rgb(255, 85, 86)
-            }
-            #showoff-IEJXWPXUSI .showoff-top-title {
-                color: rgb(109, 107, 95)
-            }
-            #showoff-IEJXWPXUSI .showoff-project-inner h4 {
-                color: rgb(54, 54, 54)
-            }
-            #showoff-IEJXWPXUSI .showoff-project-inner .showoff-project-inner-content {
-                color: rgb(101, 101, 101)
-            }
-            #showoff-IEJXWPXUSI.legacy .showoff-content li.active .showoff-project-thumbnail-hover, #showoff-IEJXWPXUSI.legacy .showoff-project-thumbnail:hover .showoff-project-thumbnail-hover {
-                background:none;
-                -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffff2954, endColorstr=#ffff2954);
-                filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffff2954, endColorstr=#ffff2954);
-                zoom: 1;
-                background: rgba(255, 41, 84, 1);
-                opacity:1;
-            }
-            #showoff-IEJXWPXUSI .showoff-project-inner-media img {
-                cursor:pointer;
-            }
-        </style>
-    </head>
-    
-    <body class="page page-id-15538 page-template-default  vertical_menu_enabled qode-theme-ver-5.7 wpb-js-composer js-comp-ver-4.3.4 vc_responsive">
-        <div class="ajax_loader">
-            <div class="ajax_loader_1">
-                <div class="stripes">
-                    <div class="rect1"></div>
-                    <div class="rect2"></div>
-                    <div class="rect3"></div>
-                    <div class="rect4"></div>
-                    <div class="rect5"></div>
+        
+        <nav id="menu">
+        	<ul id="menu-nav">
+            	<li class="current"><a href="#home-slider">Home</a></li>
+                <li><a href="#work">My Work</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+				<li><a href="index.html" class="external">F.Spencer Identity</a></li>
+            </ul>
+        </nav>
+        
+    </div>
+</header>
+<!-- End Header -->
+
+<!-- Our Work Section -->
+<div id="work" class="page">
+	<div class="container">
+    	<!-- Title Page -->
+        <div class="row">
+            <div class="span12">
+                <div class="title-page">
+                    <h2 class="title">My Work</h2>
+                    <h3 class="title-description">Check Out My Projects.</h3>
                 </div>
             </div>
         </div>
-        <div class="wrapper">
-            <div class="wrapper_inner">
-                <!-- Google Analytics start -->
-                <!-- Google Analytics end -->
-                <aside class="vertical_menu_area with_scroll light" tabindex="5000" style="overflow-y: hidden; outline: none;">
-                    <div class="vertical_area_background"></div>
-                    <div class="vertical_logo_wrapper">
-                        <div class="q_logo_vertical">	<a href="Trees-Icon-adjust.jpg">
-						<img class="normal" src="Trees-Icon-adjust.jpg" alt="Logo">
-                        <img class="light" src="Trees-Icon-adjust.jpg" alt="Logo">
-                        <img class="dark" src="Trees-Icon-adjust.jpg" alt="Logo">
-					</a>
-
-                        </div>
-                    </div>
-                    <nav class="vertical_menu dropdown_animation vertical_menu_toggle">
-                        <ul id="menu-home-screen-menu" class="">
-                            <li id="nav-menu-item-15511" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home  narrow"><a href="http://www.spencerbuster.com" class=""><i class="menu_icon fa blank"></i><span>Home</span><span class="plus"></span></a>
+        <!-- End Title Page -->
+        
+        <!-- Portfolio Projects -->
+        <div class="row">
+        	<div class="span3">
+            	<!-- Filter -->
+                <nav id="options" class="work-nav">
+                    <ul id="filters" class="option-set" data-option-key="filter">
+                    	<li class="type-work">Type of Work</li>
+                        <li><a href="#filter" data-option-value="*" class="selected">All Projects</a></li>
+                        <li><a href="#filter" data-option-value=".design">Design</a></li>
+                        <li><a href="#filter" data-option-value=".webapp">Web Apps</a></li>
+                        <li><a href="#filter" data-option-value=".website">Websites</a></li>
+                    </ul>
+                </nav>
+                <!-- End Filter -->
+            </div>
+            
+            <div class="span9">
+            	<div class="row">
+                	<section id="projects">
+                    	<ul id="thumbs">
+                        
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 design">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Creative Resume" target="_blank" href="projects/SBuster Resume.pdf">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb">Creative Resume</span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="img/CreativeResume.png" alt="Creative Resume, HTML, CSS, Angular, AngularJS, ">
                             </li>
-                            <li id="nav-menu-item-15546" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-15538 current_page_item active narrow"><a href="http://www.spencerbuster.com/SkillsEducation.html" class=" current "><i class="menu_icon fa blank"></i><span>Skills | Education</span><span class="plus"></span></a>
+                        	<!-- End Item Project -->
+                            
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 website">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Tourdebrewdaho Site" target="_blank" href="http://www.tourdebrewdaho.com">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb">Tourde</br>brewdaho</br> Site</span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="img/brewerytour.jpg" alt="Brewery, breweries, website, tour Boise Brewery, tour Boise Breweries, tour Boise Breweries on bike, tour Boise Breweries on bicycle, Brewery bike tour, bike tour">
                             </li>
-                            <li id="nav-menu-item-15376" class="menu-item menu-item-type-post_type menu-item-object-page  narrow"><a href="http://www.spencerbuster.com/#contact" class=""><i class="menu_icon fa blank"></i><span>Contact</span><span class="plus"></span></a>
+                        	<!-- End Item Project -->
+                            
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 webapp">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="NFL Fantasy Football App" target="_blank" href="projects/nfl/index.html">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb">NFL</br>Fantasy</br>Football</br>App</span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img style="height: 15em !important;" src="img/nfl-fantasy-football.jpg" alt="NFL Fantasy Football App, Make your own team">
                             </li>
-                            <li id="nav-menu-item-15590" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a target="_blank" href="http://www.spencerbuster.com/" class=""><i class="menu_icon fa blank"></i><span><i class="_mi _before fa fa-behance"></i><span></span></span><span class="plus"></span></a>
+                        	<!-- End Item Project -->
+                            
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 website">
+                            	<!-- Fancybox Media - Gallery Enabled - Title - Link to Video -->
+                            	<a class="hover-wrap fancybox-media" data-fancybox-group="video" title="Brewdaho Site" href="http://www.brewdaho.com">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb">Brewdaho Site</span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="img/beertap.jpg" alt="Brewery, breweries, website, find brewery, find nearest brewery">
                             </li>
+                        	<!-- End Item Project -->
+                            
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 webapp">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Racing Frogs" href="projects/RacingFrogs/index.html">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb">Racing Frogs App</span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img style="height: 12em !important;" src="img/RacingFrogsthumb.png" alt="Racing Frogs App, webapp">
+                            </li>
+                        	<!-- End Item Project -->
+                            
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 webapp">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Clouds" href="projects/slapGame/index.html">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb">Stress Reliever Game</span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="img/stickfigure.png" alt="webapp, web app, Stress Reliever Game, slap somebody, stress release">
+                            </li>
+                        	<!-- End Item Project -->
+                           
+							<!-- Item Project and Filter Name -->
+                        	<!-- <li class="item-thumbs span3 video">
+                            	<!-- Fancybox Media - Gallery Enabled - Title - Link to Video -->
+                            	<!-- <a class="hover-wrap fancybox-media" data-fancybox-group="video" title="Video Content From Vimeo" href="http://vimeo.com/50834315">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                            <!--     <img src="_include/img/work/thumbs/image-09.jpg" alt="Video">
+                            </li>
+                        	<!-- End Item Project -->
+                            
+							<!-- Item Project and Filter Name -->
+                        	<!-- <li class="item-thumbs span3 design">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<!-- <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Dark" href="_include/img/work/full/image-06-full.jpg">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                             <!--    <img src="_include/img/work/thumbs/image-06.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                            </li>
+                        	<!-- End Item Project -->
+                            
+							<!-- Item Project and Filter Name -->
+                        	<!-- <li class="item-thumbs span3 design">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                           <!--  	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Beach" href="_include/img/work/full/image-07-full.jpg">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                           <!--      <img src="_include/img/work/thumbs/image-07.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                            </li>
+                        	 <!--End Item Project -->
                         </ul>
-                    </nav>
-                    <div class="vertical_menu_area_widget_holder"></div>
-                </aside>
-                <header class="page_header   stick  light">
-                    <div class="header_inner clearfix">
-                        <div class="header_bottom clearfix" style=" background-color:rgba(255, 255, 255, 0);">
-                            <div class="container">
-                                <div class="container_inner clearfix">
-                                    <div class="header_inner_left">
-                                        <div class="mobile_menu_button"><span><i class="fa fa-bars"></i></span>
-                                        </div>
-                                        <div class="logo_wrapper">
-                                            <div class="q_logo"><a href="index.html" style="height: 79px; visibility: visible;"><img class="normal" src="Trees-Icon-adjust.jpg" alt="Logo" style="height: 100%;"><img class="light" src="Trees-Icon-adjust.jpg" alt="Logo" style="height: 100%;"><img class="dark" src="Trees-Icon-adjust.jpg" alt="Logo" style="height: 100%;"><img class="sticky" src="Trees-Icon-adjust.jpg" alt="Logo" style="height: 100%;"><img class="popup" src="Trees-Icon-adjust.jpg" alt="Logo" style="height: 100%;"></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <nav class="mobile_menu">
-                                <ul id="menu-home-screen-menu-1" class="">
-                                    <li id="mobile-menu-item-15511" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home "><a href="index.html" class=""><span>Home</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span>
-                                    </li>
-                                    <li id="mobile-menu-item-15546" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-15538 current_page_item active"><a href="SkillsEducation.html" class=" current "><span>Portfolio</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span>
-                                    </li>
-                                    <li id="mobile-menu-item-15376" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="SkillsEducation.html#contact" class=""><span>Contact</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span>
-                                    </li>
-                                    <li id="mobile-menu-item-15590" class="menu-item menu-item-type-custom menu-item-object-custom "><a target="_blank" href="index.html" class=""><span><i class="_mi _before fa fa-behance"></i><span></span></span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </header>	<a id="back_to_top" href="#">
-			<span class="fa-stack">
-				<i class="fa fa-arrow-up" style=""></i>
-			</span>
-		</a>
-
-                <div class="popup_menu_holder_outer">
-                    <div class="popup_menu_holder">
-                        <div class="popup_menu_holder_inner">
-                            <nav class="popup_menu">
-                                <ul id="menu-fullscreen_menu" class="">
-                                    <li id="popup-menu-item-15491" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="index.html" class=""><span>Home</span></a>
-                                    </li>
-                                    <!--<li id="popup-menu-item-15490" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="http://maisieeverett.com/about-the-team" class=""><span>About The Team</span></a>
-                                    </li>
-                                    <li id="popup-menu-item-15489" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="http://maisieeverett.com/about-the-company" class=""><span>About The Company</span></a>
-                                    </li>
-                                    <li id="popup-menu-item-15492" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="http://maisieeverett.com/portfolio/gallery-style-condensed/four-columns-wide" class=""><span>Work</span></a>
-                                    </li>
-                                    <li id="popup-menu-item-14959" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="http://maisieeverett.com/blog/large-image-2" class=""><span>Blog</span></a>
-                                    </li>-->
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-                <div class="content " style="min-height: 1040px; padding-top: 0px;">
-                    <div class="content_inner  ">
-                        <div class="container">
-                            <div class="container_inner default_template_holder clearfix page_container_inner">
-                                <script type="text/javascript">
-                                    if (typeof showoff_instance === "undefined") {
-                                        var showoff_instance = [];
-                                    }
-
-                                    showoff_instance.push({
-                                        "cols": "4",
-                                        "perpage": "8",
-                                        "spacing": "1",
-                                        "aspect": "1",
-                                        "focusoffset": "0",
-                                        "animationtype": "random",
-                                        "catfilter": "standard",
-                                        "cat": "1",
-                                        "title": "",
-                                        "lightbox": "1",
-                                        "sharebuttons": "1",
-                                        "buttonsfont": "Roboto Condensed",
-                                        "titlefont": "Roboto Condensed",
-                                        "projectitlefont": "Roboto Condensed",
-                                        "projecdescfont": "Battambang",
-                                        "projecthoverfont": "Roboto Condensed",
-                                        "buttonsfontsize": "12px",
-                                        "titlefontsize": "30px",
-                                        "projectitlefontsize": "31px",
-                                        "projecdescfontsize": "14px",
-                                        "projecthoverfontsize": "18px",
-                                        "titlecolor": "109,107,95",
-                                        "projecttitlecolor": "54,54,54",
-                                        "projectinnercolor": "101,101,101",
-                                        "buttonbgcolor": "255,85,86",
-                                        "buttoncolor": "255,255,255",
-                                        "buttonbgcolorhover": "255,0,94",
-                                        "buttoncolorhover": "255,255,255",
-                                        "buttonbgcoloractive": "188,188,188",
-                                        "buttoncoloractive": "255,255,255",
-                                        "projectbgcolorhover": "255,41,84",
-                                        "projecthoverstyle": "title",
-                                        "projecthovertype": "modern",
-                                        "projecthoveropacity": "1",
-                                        "projectcolorhover": "255,255,255",
-                                        "projectinnerbgcolor": "255,255,255",
-                                        "navicolor": "205,205,205",
-                                        "navicolorhover": "255,85,86",
-                                        "navicoloractive": "255,85,86",
-                                        "unique": "showoff-IEJXWPXUSI",
-                                        "_get_project": "0",
-                                        "_get_page": "0",
-                                        "_get_cat": "0"
-                                    });
-                                </script>
-                                <div class="showoff" id="showoff-IEJXWPXUSI" style="display: block;">
-                                    <div class="showoff-top mini" style="margin-left: 0.5%; margin-right: 0.5%; width: 99%;">
-                                        <p class="showoff-top-title"></p>
-                                        <div class="showoff-categories" style="display: none;"> <a id="showoff-cat-0" href="#" class="active">All</a>
- <a id="showoff-cat-1" href="#">Work</a>
-
-                                        </div>
-                                        <select class="showoff-categories-mini">
-                                            <option value="showoff-cat-0">All</option>
-                                            <option value="showoff-cat-1">Work</option>
-                                        </select>
-                                    </div>
-                                    <div class="showoff-content">
-                                        <ul>
-                                            <a href="projects/RacingFrogs/index.html" target="_blank"><li class="showoff-project-id-4 showoff-project-cat-1" style="margin: 0.5%; width: 24%; height: 184px;">
-                                                <div class="showoff-project-thumbnail" style="height: 185px; z-index: 8;">
-                                                    <div class="showoff-project-thumbnail-hover">
-                                                        <div class="showoff-project-thumbnail-hover-style"> <i class="fa fa-eye"></i>
-
-                                                            <p class="">Racing Frogs</p>
-                                                        </div>
-                                                    </div>
-                                                    <img src="img/RacingFrogsthumb.png" class="" style="height: 184px; animation-delay: 100ms; z-index: 0;">
-                                                </div>
-                                                <div class="showoff-project-inner" style="display: none;">
-                                                    <div class="showoff-project-inner-wrapper">
-                                                        <div class="fa fa-times showoff-project-inner-close"></div>
-                                                        <!-- Images Only -->
-
-                                                        <div class="showoff-project-inner-full">
-                                                            <h4>Racing Frogs</h4>
-                                                            <div class="showoff-project-inner-media">
-                                                                <img style="display: none" src="" alt="img/nfl-fantasy-football.jpg">
-                                                                <div class="showoff-project-inner-media-loader"></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li></a>
-                                            <a href="projects/nfl/index.html" target="_blank"><li class="showoff-project-id-4 showoff-project-cat-1" style="margin: 0.5%; width: 24%; height: 184px;">
-                                                <div class="showoff-project-thumbnail" style="height: 185px; z-index: 8;">
-                                                    <div class="showoff-project-thumbnail-hover">
-                                                        <div class="showoff-project-thumbnail-hover-style"> <i class="fa fa-eye"></i>
-
-                                                            <p class="">NFL Fantasy Football App</p>
-                                                        </div>
-                                                    </div>
-                                                    <img src="img/nfl-fantasy-football.jpg" class="" style="height: 184px; animation-delay: 100ms; z-index: 0;">
-                                                </div>
-                                                <div class="showoff-project-inner" style="display: none;">
-                                                    <div class="showoff-project-inner-wrapper">
-                                                        <div class="fa fa-times showoff-project-inner-close"></div>
-                                                        <!-- Images Only -->
-
-                                                        <div class="showoff-project-inner-full">
-                                                            <h4>NFL Fantasy Football App</h4>
-                                                            <div class="showoff-project-inner-media">
-                                                                <img style="display: none" src="" alt="img/nfl-fantasy-football.jpg">
-                                                                <div class="showoff-project-inner-media-loader"></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li></a>
-                                            <a target="_blank" href="projects/slapGame/index.html"><li class="showoff-project-id-6 showoff-project-cat-1" style="margin: 0.5%; width: 24%; height: 184px;">
-                                                <div class="showoff-project-thumbnail" style="height: 185px; z-index: 7;">
-                                                    <div class="showoff-project-thumbnail-hover">
-                                                        <div class="showoff-project-thumbnail-hover-style"> <i class="fa fa-eye"></i>
-
-                                                            <p class="">Slap Game</p>
-                                                        </div>
-                                                    </div>
-                                                    <img src="img/stickfigure.png" class="" style="height: 184px; animation-delay: 200ms; z-index: 0;">
-                                                </div>
-                                                <div class="showoff-project-inner" style="display: none;">
-                                                    <div class="showoff-project-inner-wrapper">
-                                                        <div class="fa fa-times showoff-project-inner-close"></div>
-                                                        <!-- Images Only -->
-                                                        <div class="showoff-project-inner-full">
-                                                            <h4>Slap Game</h4>
-
-                                                            <div class="showoff-project-inner-media">
-                                                                <img style="display: none" src="" alt="img/stickfigure.png">
-                                                                <img style="display: none" src="" alt="img/stickfigure.png">
-                                                                <div class="showoff-project-inner-media-loader"></div>
-                                                                <div class="showoff-project-inner-pagination">
-                                                                    <div class="fa fa-circle showoff-project-inner-pagination-page active"></div>
-                                                                    <div class="fa fa-circle showoff-project-inner-pagination-page "></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li></a>
-                                            <a target="_blank" href="projects/SBuster Resume.pdf"><li class="showoff-project-id-5 showoff-project-cat-1" style="margin: 0.5%; width: 24%; height: 184px;">
-                                                <div class="showoff-project-thumbnail" style="height: 185px; z-index: 6;">
-                                                    <div class="showoff-project-thumbnail-hover">
-                                                        <div class="showoff-project-thumbnail-hover-style"> <i class="fa fa-eye"></i>
-
-                                                            <p class="">Creative Resume</p>
-                                                        </div>
-                                                    </div>
-                                                    <img src="img/CreativeResume.png" class="" style="height: 184px; animation-delay: 300ms; z-index: 0;">
-                                                </div>
-                                                <div class="showoff-project-inner" style="display: none;">
-                                                    <div class="showoff-project-inner-wrapper">
-                                                        <div class="fa fa-times showoff-project-inner-close"></div>
-                                                        <!-- Images Only -->
-                                                        <div class="showoff-project-inner-full">
-                                                            <h4>Creative Resume</h4>
-
-                                                            <div class="showoff-project-inner-media">
-                                                                <img style="display: none" src="" alt="img/CreativeResume.png">
-                                                                <div class="showoff-project-inner-media-loader"></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li></a>
-                                            <a target="_blank" href="http://www.tourdebrewdaho.com"><li class="showoff-project-id-7 showoff-project-cat-1" style="margin: 0.5%; width: 24%; height: 184px;">
-                                                <div class="showoff-project-thumbnail" style="height: 185px; z-index: 5;">
-                                                    <div class="showoff-project-thumbnail-hover">
-                                                        <div class="showoff-project-thumbnail-hover-style"> <i class="fa fa-eye"></i>
-
-                                                            <p class="">TourDeBrewdaho Website</p>
-                                                        </div>
-                                                    </div>
-                                                    <img src="img/tourdebrewdaho-mock-up.png" class="" style="height: 184px; animation-delay: 400ms; z-index: 0;">
-                                                </div>
-                                                <div class="showoff-project-inner" style="display: none;">
-                                                    <div class="showoff-project-inner-wrapper">
-                                                        <div class="fa fa-times showoff-project-inner-close"></div>
-                                                        <!-- Images Only -->
-                                                        <div class="showoff-project-inner-full">
-                                                            <h4>TourDeBrewdaho Website</h4>
-
-                                                            <div class="showoff-project-inner-media">
-                                                                <img style="display: none" src="" alt="img/tourdebrewdaho-mock-up.png">
-                                                                <img style="display: none" src="" alt="img/tourdebrewdaho-mock-up.png">
-                                                                <div class="showoff-project-inner-media-loader"></div>
-                                                                <div class="showoff-project-inner-pagination">
-                                                                    <div class="fa fa-circle showoff-project-inner-pagination-page active"></div>
-                                                                    <div class="fa fa-circle showoff-project-inner-pagination-page "></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li></a>
-                                            <a target="_blank" href="index.html"><li class="showoff-project-id-8 showoff-project-cat-1" style="margin: 0.5%; width: 24%; height: 184px;">
-                                                <div class="showoff-project-thumbnail" style="height: 185px; z-index: 4;">
-                                                    <div class="showoff-project-thumbnail-hover">
-                                                        <div class="showoff-project-thumbnail-hover-style"> <i class="fa fa-eye"></i>
-
-                                                            <p class="">Personal Identity</p>
-                                                        </div>
-                                                    </div>
-                                                    <img src="Trees-Icon.jpg" class="" style="height: 184px; animation-delay: 500ms; z-index: 0;">
-                                                </div>
-                                                <div class="showoff-project-inner" style="display: none;">
-                                                    <div class="showoff-project-inner-wrapper">
-                                                        <div class="fa fa-times showoff-project-inner-close"></div>
-                                                        <!-- Images Only -->
-                                                        <div class="showoff-project-inner-full">
-                                                            <h4>Personal Identity</h4>
-
-                                                            <div class="showoff-project-inner-media">
-                                                                <img style="display: none" src="" alt="Trees-Icon.jpg">
-                                                                <div class="showoff-project-inner-media-loader"></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li></a>
-                                            <!--<li style="margin: 0.5%; width: 24%; height: 184px; display: none;">
-                                                <div class="showoff-project-thumbnail" style="height: 185px; z-index: 3;"></div>
-                                            </li>
-                                            <li style="margin: 0.5%; width: 24%; height: 184px; display: none;">
-                                                <div class="showoff-project-thumbnail" style="height: 185px; z-index: 2;"></div>
-                                            </li>
-                                            <li style="margin: 0.5%; width: 24%; height: 184px; display: none;">
-                                                <div class="showoff-project-thumbnail" style="height: 185px; z-index: 1;"></div>
-                                            </li>-->
-                                        </ul>
-                                        <canvas id="myCanvas"></canvas>
-                                        <div class="showoff-project-inner-full" style="color: darkblue !important">
-                                            <h4 style="color: darkblue !important; text-transform: none !important;">
-                                                Everything you see, from my website to the websites I have created for others to these projects are pieces of what I have been learning since August 28th.
-                                                I began the Software Development Bootcamp at Boise Code Works - Boise's Premier Bootcamp and have grown exponentially. Before this I was self-teaching and taking
-                                                online courses.<br />
-                                                On top of working on the tourdebrewdaho.com, brewdaho.com, and <a style="color: greenyellow !important;" href="http://mobile-vendors.azurewebsites.net/">mobile vendor site</a>, I am currently working on a Google Polymer project for an internship.<br />
-                                                Although any of these projects could turn into profitable ventures I have been doing these pro bono to help build my portfolio.<br />
-                                                If you have any feedback or you would like to hire me please <a style="color: greenyellow !important;" href="http://www.spencerbuster.com/#contact">contact me</a>. I am currently seeking employment in the Boise, Idaho area or as a remote.
-                                            </h4>
-                                        </div>
-                                        
-                                    </div>
-                                    <div class="showoff-pagination mini" style="margin-left: 0.5%; margin-right: 0.5%;"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <footer>
-                    <div class="footer_inner clearfix"></div>
-                </footer>
+                    </section>
+                    
+            	</div>
             </div>
         </div>
-        <script type="text/javascript">
-            /* <![CDATA[ */
-            var qodeLike = {
-                "ajaxurl": "http:\/\/maisieeverett.com\/wp-admin\/admin-ajax.php"
-            };
-            /* ]]> */
-        </script>
-        <script type="text/javascript" src="http://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/bubbles.js"></script>
-        <script type="text/javascript" src="js/myjs.js"></script>
-        <script type="text/javascript" src="http://maisieeverett.com/wp-content/themes/bridge/js/qode-like.js?ver=1.0"></script>
-        <script type="text/javascript" src="http://maisieeverett.com/wp-content/themes/bridge/js/plugins.js?ver=4.1.7"></script>
-        <script type="text/javascript" src="http://maisieeverett.com/wp-content/themes/bridge/js/jquery.carouFredSel-6.2.1.js?ver=4.1.7"></script>
-        <script type="text/javascript" src="http://maisieeverett.com/wp-content/themes/bridge/js/lemmon-slider.js?ver=4.1.7"></script>
-        <script type="text/javascript" src="http://maisieeverett.com/wp-content/themes/bridge/js/jquery.fullPage.min.js?ver=4.1.7"></script>
-        <script type="text/javascript" src="http://maisieeverett.com/wp-content/themes/bridge/js/jquery.mousewheel.min.js?ver=4.1.7"></script>
-        <script type="text/javascript" src="http://maisieeverett.com/wp-content/themes/bridge/js/jquery.touchSwipe.min.js?ver=4.1.7"></script>
-        <script type="text/javascript" src="http://maisieeverett.com/wp-content/plugins/js_composer/assets/lib/isotope/dist/isotope.pkgd.min.js?ver=4.3.4"></script>
-        <script type="text/javascript" src="http://maisieeverett.com/wp-content/themes/bridge/js/default_dynamic.js?ver=1428405766"></script>
-        <script type="text/javascript" src="http://maisieeverett.com/wp-content/themes/bridge/js/default.min.js?ver=4.1.7"></script>
-        <script type="text/javascript" src="http://maisieeverett.com/wp-content/themes/bridge/js/custom_js.js?ver=1428405766"></script>
-        <script type="text/javascript" src="http://maisieeverett.com/wp-includes/js/comment-reply.min.js?ver=4.1.7"></script>
-        <script type="text/javascript" src="http://maisieeverett.com/wp-content/plugins/js_composer/assets/js/js_composer_front.js?ver=4.3.4"></script>
-        <div id="ascrail2000" class="nicescroll-rails" style="width: 0px; z-index: 101; cursor: default; position: fixed; top: 0px; left: 260px; height: 1040px; opacity: 1; display: none;">
-            <div style="position: relative; top: 0px; float: right; width: 0px; height: 0px; border: 0px; border-radius: 0px; background-color: transparent; background-clip: padding-box;"></div>
-        </div>
-    </body>
+        <!-- End Portfolio Projects -->
+    </div>
+</div>
+<!-- End Our Work Section -->
 
+<!-- About Section -->
+<div id="about" class="page-alternate">
+<div class="container">
+    <!-- Title Page -->
+    <div class="row">
+        <div class="span12">
+            <div class="title-page">
+                <h2 class="title">About Me</h2>
+                <h3 class="title-description">Learn About The Culture I Live.</h3>
+            </div>
+        </div>
+    </div>
+    <!-- End Title Page -->
+    
+    <!-- People -->
+    <div class="row">
+    	
+        <!-- Start Profile -->
+    	<!--<div class="span4 profile">
+        	<div class="image-wrap">
+                <div class="hover-wrap">
+                    <span class="overlay-img"></span>
+                    <span class="overlay-text-thumb">CTO/Founder</span>
+                </div>
+                <img src="_include/img/profile/profile-01.jpg" alt="John Doe">
+            </div>
+            <h3 class="profile-name">John Doe</h3>
+            <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a href="#">hendrerit dictum</a>. 
+            Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+            	
+            <div class="social">
+            	<ul class="social-icons">
+                	<li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
+                    <li><a href="#"><i class="font-icon-social-dribbble"></i></a></li>
+                    <li><a href="#"><i class="font-icon-social-facebook"></i></a></li>
+                </ul>
+            </div>
+        </div>-->
+        <!-- End Profile -->
+        
+        <!-- Start Profile -->
+    	<div class="span12 profile">
+        	<div class="image-wrap">
+                <div style="width: 20em !important;" class="hover-wrap">
+                    <span class="overlay-img"></span>
+                    <span class="overlay-text-thumb">Software Developer</span>
+                </div>
+                <img style="height: 30em !important; width: 20em !important;" src="_include/img/profile/profile.jpg" alt="Spencer Buster">
+            </div>
+            <h3 class="profile-name">Spencer Buster</h3>
+            <p class="profile-description">Everything you see, from my website to the websites I have created for others to these projects are pieces of what I have been learning since August 28th.
+                I began the Software Development Bootcamp at Boise Code Works - Boise's Premier Bootcamp and have grown exponentially. Before this I was self-teaching and taking
+                online courses.<br />
+                On top of working on the tourdebrewdaho.com, brewdaho.com, and <a style="color: greenyellow !important;" href="http://mobile-vendors.azurewebsites.net/">mobile vendor site</a>, I am currently working on a Google Polymer project for an internship.<br />
+                Although any of these projects could turn into profitable ventures I have been doing these pro bono to help build my portfolio.<br />
+                If you have any feedback or you would like to hire me please <a style="color: greenyellow !important;" href="http://www.spencerbuster.com/#contact">contact me</a>.</p>
+            	
+            <div class="social">
+            	<ul class="social-icons">
+                    <li><a href="https://www.linkedin.com/in/spencerbuster"><i class="font-icon-social-linkedin"></i></a></li>
+                    <li><a href="https://plus.google.com/106827911610813543770/about"><i class="font-icon-social-google-plus"></i></a></li>
+                	<li><a href="https://twitter.com/fspencerb"><i class="font-icon-social-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/fspencerb"><i class="font-icon-social-facebook"></i></a></li>
+                    <li><a href="mailto:fspencerb@gmail.com"><i class="font-icon-social-email"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- End Profile -->
+        
+        <!-- Start Profile -->
+    	<!--<div class="span4 profile">
+        	<div class="image-wrap">
+                <div class="hover-wrap">
+                    <span class="overlay-img"></span>
+                    <span class="overlay-text-thumb">Lead Designer</span>
+                </div>
+                <img src="_include/img/profile/profile-03.jpg" alt="Joshua Insanus">
+            </div>
+            <h3 class="profile-name">Joshua Insanus</h3>
+            <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a href="#">hendrerit dictum</a>. 
+            Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+            	
+            <div class="social">
+            	<ul class="social-icons">
+                	<li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
+                    <li><a href="#"><i class="font-icon-social-linkedin"></i></a></li>
+                    <li><a href="#"><i class="font-icon-social-google-plus"></i></a></li>
+                    <li><a href="#"><i class="font-icon-social-vimeo"></i></a></li>
+                </ul>
+            </div>
+        </div>-->
+        <!-- End Profile -->
+        
+    </div>
+    <!-- End People -->
+</div>
+</div>
+<!-- End About Section -->
+
+
+<!-- Contact Section -->
+<div id="contact" class="page">
+<div class="container">
+    <!-- Title Page -->
+    <div class="row">
+        <div class="span12">
+            <div class="title-page">
+                <h2 class="title">Get in Touch</h2>
+                <h3 class="title-description">I'm currently seeking employment in the Boise, Idaho area or as a remote. I look forward to hearing from you.</h3>
+            </div>
+        </div>
+    </div>
+    <!-- End Title Page -->
+    
+    <!-- Contact Form -->
+    <div class="row">
+    	<!--<div class="span9">
+        
+        	<form id="contact-form" class="contact-form" action="#">
+            	<p class="contact-name">
+            		<input id="contact_name" type="text" placeholder="Full Name" value="" name="name" />
+                </p>
+                <p class="contact-email">
+                	<input id="contact_email" type="text" placeholder="Email Address" value="" name="email" />
+                </p>
+                <p class="contact-message">
+                	<textarea id="contact_message" placeholder="Your Message" name="message" rows="15" cols="40"></textarea>
+                </p>
+                <p class="contact-submit">
+                	<a id="contact-submit" class="submit" href="#">Send Your Email</a>
+                </p>
+                
+                <div id="response">
+                
+                </div>
+            </form>
+         
+        </div>-->
+        
+        <div style="text-align: center;" class="span12">
+        	<div class="contact-details">
+        		<h3>Contact Details</h3>
+                <ul>
+                    <li><a href="#">fspencerb@gmail.com</a></li>
+                    <li>(208) 521-6978</li>
+                    <li>
+                        F. Spencer Buster
+                        <br>
+                        Meridian, ID 83646
+                        <br>
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- End Contact Form -->
+</div>
+</div>
+<!-- End Contact Section -->
+
+<!-- Twitter Feed -->
+<!--<div id="twitter-feed" class="page-alternate">
+	<div class="container">
+    	<div class="row">
+            <div class="span12">
+                <div class="follow">
+                    <a href="https://twitter.com/fspencerb" title="Follow Me on Twitter" target="_blank"><i class="font-icon-social-twitter"></i></a>
+                </div>
+                    
+                <div id="ticker" class="query"> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>-->
+<!-- End Twitter Feed -->
+
+<!-- Socialize -->
+<div id="social-area" class="page">
+	<div class="container">
+    	<div class="row">
+            <div class="span12">
+                <nav id="social">
+                    <ul>
+                        <li><a href="https://twitter.com/fspencerb" title="Follow Me on Twitter" target="_blank"><span class="font-icon-social-twitter"></span></a></li>
+                        <li><a href="https://github.com/fspencerb" title="Follow Me on Github" target="_blank"><span class="font-icon-social-github"></span></a></li>
+                        <!--<li><a href="http://forrst.com/people/Bluxart" title="Follow Me on Forrst" target="_blank"><span class="font-icon-social-forrst"></span></a></li>
+                        <li><a href="http://www.behance.net/alessioatzeni" title="Follow Me on Behance" target="_blank"><span class="font-icon-social-github"></span></a></li>-->
+                        <li><a href="https://www.facebook.com/fspencerb" title="Follow Me on Facebook" target="_blank"><span class="font-icon-social-facebook"></span></a></li>
+                        <li><a href="https://plus.google.com/106827911610813543770/about" title="Follow Me on Google Plus" target="_blank"><span class="font-icon-social-google-plus"></span></a></li>
+                        <li><a href="https://www.linkedin.com/in/spencerbuster" title="Follow Me on LinkedIn" target="_blank"><span class="font-icon-social-linkedin"></span></a></li>
+                        <li><a href="mailto:fspencerb@gmail.com" title="Email Me" target="_blank"><span class="font-icon-social-email"></span></a></li>
+                        <!--<li><a href="http://zerply.com/Bluxart/public" title="Follow Me on Zerply" target="_blank"><span class="font-icon-social-zerply"></span></a></li>-->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Socialize -->
+
+<!-- Footer -->
+<footer>
+	<p class="credits">&copy;2015 BusterDesign. <a href="index.html" title="BusterDesign | Projects Portfolio">Projects Design</a> by <a href="index.html" title="F. Spencer Buster | Web Designer &amp; Front-end Developer">F. Spencer Buster</a></p>
+</footer>
+<!-- End Footer -->
+
+<!-- Back To Top -->
+<a id="back-to-top" href="#">
+	<i class="font-icon-arrow-simple-up"></i>
+</a>
+<!-- End Back to Top -->
+
+
+<!-- Js -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- jQuery Core -->
+<script src="_include/js/bootstrap.min.js"></script> <!-- Bootstrap -->
+<script src="_include/js/supersized.3.2.7.min.js"></script> <!-- Slider -->
+<script src="_include/js/waypoints.js"></script> <!-- WayPoints -->
+<script src="_include/js/waypoints-sticky.js"></script> <!-- Waypoints for Header -->
+<script src="_include/js/jquery.isotope.js"></script> <!-- Isotope Filter -->
+<script src="_include/js/jquery.fancybox.pack.js"></script> <!-- Fancybox -->
+<script src="_include/js/jquery.fancybox-media.js"></script> <!-- Fancybox for Media -->
+<script src="_include/js/jquery.tweet.js"></script> <!-- Tweet -->
+<script src="_include/js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
+<script src="_include/js/main.js"></script> <!-- Default JS -->
+<!-- End Js -->
+
+</body>
 </html>
